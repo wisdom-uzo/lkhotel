@@ -1,10 +1,4 @@
 import { useCallback, useEffect } from "react";
-import MostPickedContainer from "../components/most-picked-container";
-import BeautyBackyardCard from "../components/beauty-backyard-card";
-import LargeLivingRoomHotelsContainer from "../components/large-living-room-hotels-container";
-import FormContainer from "../components/form-container";
-import PrimaryButton from "../components/primary-button";
-import VacationForm from "../components/vacation-form";
 import Link from "next/link";
 
 const HomePage = () => {
@@ -385,7 +379,7 @@ const HomePage = () => {
               Angga, Product Designer
             </div>
 
-            <PrimaryButton
+            {/* <PrimaryButton
               ctaButtonText="Read Their Story"
               propHeight="50px"
               propWidth="244.09px"
@@ -394,7 +388,7 @@ const HomePage = () => {
               propBottom="unset"
               propLeft="4px"
               onBtnPrimaryContainer1Click={onBtnPrimaryContainerClick}
-            />
+            /> */}
             <img
               className=" w-[180px] h-9"
               alt=""
