@@ -8,9 +8,9 @@ import PageWelcome from '../../sections/PageWelcome'
 
 const Room = ({params}) => {
 
-   const rout = usePathname().split('/').slice(-1)[0]
+   const rout2 = useRouter()
 
-   const currentRoom = availableRooms.find( rooms  => rooms.roomNumber === rout )
+   const currentRoom = availableRooms.find( rooms  => rooms.roomNumber === rout2.query.room )
    console.log(currentRoom)
 
   return (
