@@ -6,10 +6,12 @@ import Layout from '../../sections/Layout'
 import Image from 'next/image'
 import PageWelcome from '../../sections/PageWelcome'
 
-const Room = ({currentRoom}) => {
+const Room = ({params}) => {
 
- console.log(currentRoom)
-  
+   const rout = usePathname().split('/').slice(-1)[0]
+
+   const currentRoom = availableRooms.find( rooms  => rooms.roomNumber === rout )
+   console.log(currentRoom)
 
   return (
     <Layout>
@@ -37,12 +39,12 @@ const Room = ({currentRoom}) => {
 export default Room
 
 
-export async function getServerSideProps( context ) {
+// export async function getInitialProps( context ) {
 
-  const {room} = context.params
-  const currentRoom = availableRooms.find( rooms  => rooms.roomNumber === room )
-  console.log(currentRoom)
-  return {
-    props : {currentRoom} 
-  }
-}
+//   const {room} = context.params
+//   const currentRoom = availableRooms.find( rooms  => rooms.roomNumber === room )
+//   console.log(currentRoom)
+//   return {
+//     props : {currentRoom} 
+//   }
+// }

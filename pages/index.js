@@ -1,5 +1,6 @@
 import { useCallback, useEffect } from "react";
 import Link from "next/link";
+import Header from "../sections/Header";
 
 const HomePage = () => {
   const onBtnPrimaryContainerClick = useCallback(() => {
@@ -134,53 +135,7 @@ const HomePage = () => {
     <div className="relative bg-white w-full overflow-hidden text-left text-base text-darkgray font-poppins">
      
 
-     <header className="bg-white shadow-md">
-      <div className="container mx-auto px-4 py-3 flex items-center justify-between">
-        <Link href="/" className="text-xl font-semibold text-gray-800">
-          <img
-            src="/images/logo.png"
-            alt="L&K Hotel and Suites Logo"
-            className="h-12"
-          />
-        </Link>
-        <nav>
-          <ul className="flex space-x-6 list-none">
-            <li>
-              <Link href="/rooms" className="text-gray-600 hover:text-gray-800">
-                Rooms
-              </Link>
-            </li>
-            <li>
-              <Link href="/amenities" className="text-gray-600 hover:text-gray-800">
-                Amenities
-              </Link>
-            </li>
-            <li>
-              <Link href="/dining" className="text-gray-600 hover:text-gray-800">
-                Dining
-              </Link>
-            </li>
-            <li>
-              <Link href="/about" className="text-gray-600 hover:text-gray-800">
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link  href="/contact" className="text-gray-600 hover:text-gray-800">
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </nav>
-        <Link
-          href="/book"
-          className="bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-6 rounded-full font-semibold transition duration-300"
-        >
-          Book Now
-        </Link>
-      </div>
-    </header>
-
+    <Header />
      {/* <header className=" bg-white w-full h-20 text-left text-7xl text-mediumslateblue font-poppins flex justify-around items-center">
       
         <div className="absolute top-[79px] left-[0px] bg-gainsboro w-full h-px" />
