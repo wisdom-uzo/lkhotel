@@ -7,7 +7,9 @@ const Header = () => {
      
       <div className="flex justify-around items-center">
 
-          <div className="">logo</div>
+          <div className="">
+            <Link href='/' className=' text-7xl font-extrabold text-black'>L&K</Link>
+          </div>
 
 
           <ul className="flex space-x-6 list-none ">
