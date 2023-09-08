@@ -1,9 +1,7 @@
 import { useRouter } from 'next/router'
 import React from 'react'
 import { availableRooms } from '../../data'
-import { usePathname } from 'next/navigation'
 import Layout from '../../sections/Layout'
-import Image from 'next/image'
 import PageWelcome from '../../sections/PageWelcome'
 
 const Room = ({params}) => {
