@@ -45,9 +45,9 @@ const Header = () => {
           </ul>
 
            <Button className='bg-yellow-400 hidden md:block'>BOOK  NOW</Button>
-           <Button className='md:hidden text-[2rem] border-4 border-blue-400' 
+           <button className='md:hidden text-[2rem] border-2 p-1 rounded-md border-blue-400' 
             onClick={() => setOPenMenu(!openMenu)}
-            ><HiMenu/></Button>
+            ><HiMenu/></button>
 
    
       </div>
