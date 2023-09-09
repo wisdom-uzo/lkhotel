@@ -1,6 +1,12 @@
 import { useCallback, useEffect } from "react";
 import Link from "next/link";
 import Header from "../sections/Header";
+import CarouselCom from "../components/CarouselCom";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+
+
 
 const HomePage = () => {
   const onBtnPrimaryContainerClick = useCallback(() => {
@@ -136,47 +142,11 @@ const HomePage = () => {
      
 
     <Header />
-     {/* <header className=" bg-white w-full h-20 text-left text-7xl text-mediumslateblue font-poppins flex justify-around items-center">
-      
-        <div className="absolute top-[79px] left-[0px] bg-gainsboro w-full h-px" />
 
-        <div className="font-medium">
-          <span>Stay</span>
-          <span className="text-darkslateblue">cation.</span>
-        </div>
-
-        <div className="text-base text-right inline-block w-[460px] h-6">
-          <span>Home</span>
-          <span className="text-darkslateblue">{`        Browse by        Stories        Agents `}</span>
-        </div>
-      </header>
-
-      <section
-        className="w-[80%] mx-auto py-5 grid grid-cols-2 [&.animate]:animate-[1s_ease_0s_1_normal_forwards_fade-in] opacity-[0]"
-        data-animate-on-scroll
-      >
-        <VacationForm />
-        <img
-          className=" relative col-span-2 md:col-span-1 overflow-hidden h-[450px] object-cover"
-          alt=""
-          src="/banner@2x.png"
-        />
-      </section>
+  
 
 
-   
-
-      {/* <MostPickedContainer /> 
-
-      <BeautyBackyardCard />
-
-      <LargeLivingRoomHotelsContainer />
-
-      <FormContainer /> 
-      */}
-
-
-<section className="relative h-screen">
+{/* <section className="relative h-screen">
       <img
         src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80"
         alt="Hotel Exterior"
@@ -195,12 +165,13 @@ const HomePage = () => {
           </button>
         </div>
       </div>
-    </section>
+    </section> */}
  
-
+    <CarouselCom />
+  
 
     <section className="py-16">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 ">
         <div className="text-center mb-10">
           <h2 className="text-4xl font-extrabold text-gray-800 mb-4">
             Amenities Highlights

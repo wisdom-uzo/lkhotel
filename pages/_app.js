@@ -2,6 +2,9 @@ import React from "react";
 import Head from "next/head";
 import "./global.css";
 
+
+
+
 function MyApp({ Component, pageProps }) {
   return (
     <React.Fragment>
@@ -17,4 +20,5 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp;
+export default MyApp; 
+ 
