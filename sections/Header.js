@@ -5,7 +5,7 @@ import { HiMenu } from 'react-icons/hi'
 
 const Header = () => {
 
-  const [openMenu, setOPenMenu] = useState(true)
+  const [openMenu, setOPenMenu] = useState(false)
   return (
     <nav className='py-3 border-2  bg-gray-100 relative'>
      
